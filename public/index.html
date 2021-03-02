@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<!-- Hola SummerHackeres! ❤-->
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Pagina Shopping List para programa Summerhack EscuelaDevRock">
+    <meta name="keywords" content="shopping, list, lista, compras, summerhack, escueladevrock">
+    <meta name="author" content="julietalazzaro">
+    <meta name="copyright" content="Julieta Lazzaro 2021">
+
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/94386a8584.js" crossorigin="anonymous"></script>
+  
+  <!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700;900&display=swap"
+  rel="stylesheet">
+
+  <!-- Icono -->
+  <link rel="shortcut icon" href="img/bola.png" type="image/x-icon">
+  
+  <!-- Robots -->
+  <meta name="robots" content="index nofollow" />
+  
+  <!-- Facebook card -->
+  <meta property="al:web:url" content="https://shopping-list-julieta.web.app" />
+  <meta property="og:url" content="https://shopping-list-julieta.web.app/" />
+  <meta property="og:title" content="Shopping List" />
+  <meta property="og:description"
+    content="Reto semanal 03 | Pagina Shopping List para programa Summerhack EscuelaDevRock" />
+  <meta property="og:image" content="https://shopping-list-julieta.web.app/img/screencart3.png" />
+  <meta property="og:image.alt" content="Shopping List" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Twitter card -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="@julietalazzaro" />
+  <meta property="twitter:creator" content="@julietalazzaro" />
+  <meta property="twitter:title" content="Shopping List" />
+  <meta property="twitter:description"
+    content="Reto semanal 04 | Pagina Shopping List para programa Summerhack EscuelaDevRock" />
+  <meta property="twitter:image" content="https://shopping-list-julieta.web.app/img/screencart3.png" />
+  <meta property="twitter:url" content="https://shopping-list-julieta.web.app/" />
+  
+  <title>SuperHeroesOracle</title>
+</head>
+<body>
+  <header class="header">
+    <img class="header__logo" src="img/bola.png" alt="Logo Shopping list">
+    <h1 class="header__title">&nbsp;Oraculo Loco</h1>
+  </header>
+
+<section class="loader">
+  <div class="loader__box">
+    <img class="loader__img" src="img/bola.png" alt="">
+  </div>
+</section>
+
+<section class="main">
+  <form action="">
+   
+    <label for="jugador1" class="form-label">Jugador 1</label>
+    <input type="text" class="form-control" required id="jugador1" aria-describedby="nombre jugador 1" placeholder="Nombre" maxlength="10" value="11">
+ 
+    <label for="jugador2" class="form-label">Jugador 2</label>
+    <input type="text" class="form-control" required id="jugador2" aria-describedby="nombre jugador 2" placeholder="Nombre" maxlength="10" value="22"> 
+    
+    <div class="valid-feedback alert alert-danger" role="alert">
+      Debe completar los nombres de los dos jugadores
+    </div>
+    <button id="btnSuerte" type="button" class="btn btn-primary">Voy a tener suerte</button>
+  </form>
+<div class="main__resultados">
+  <h5 class="main__resultados-title" >Resultados anteriores</h5>
+ <ul class="list-group main__resultados-list">
+   <li class="list-group-item">An item</li>
+   <li class="list-group-item">A second item</li>
+ </ul>
+
+</div>
+</section>
+<section class="cards">
+  <div class="cards__head">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn-close cards__btnclose" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modalOpciones"></button>
+  </div>
+
+  <div id="carouselCards" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <h3 class="carousel-item__title">Carta 1/3 de </h3>
+          <img src="" class="d-block carousel-item__img" alt="Imagen card">
+          
+          <h4 class="carousel-item__subtitle">Second slide label</h4>
+          <p class="carousel-item__desc">Some representative placeholder content for the second slide.</p>
+          <div class="carousel-item__stats">
+            <p class="carousel-item__stat">Combate: <span class="carousel-item__stat-span combat"></span></p>
+            <p class="carousel-item__stat">Resistencia: <span class="carousel-item__stat-span durability"></span></p>
+            <p class="carousel-item__stat">Inteligencia: <span class="carousel-item__stat-span intelligence"></span></p>
+            <p class="carousel-item__stat">Poder: <span class="carousel-item__stat-span power"></span></p>
+            <p class="carousel-item__stat">Velocidad: <span class="carousel-item__stat-span speed"></span></p>
+            <p class="carousel-item__stat">Fuerza: <span class="carousel-item__stat-span strength"></span></p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <h3 class="carousel-item__title">Carta 2/3 de </h3>       
+        <img src="" class="d-block carousel-item__img" alt="Imagen card">
+        
+        <h4 class="carousel-item__subtitle" >Second slide label</h4>
+        <p class="carousel-item__desc" >Some representative placeholder content for the second slide.</p>
+        <div class="carousel-item__stats">
+          <p class="carousel-item__stat">Combate: <span class="carousel-item__stat-span combat" ></span></p>
+          <p class="carousel-item__stat">Resistencia: <span class="carousel-item__stat-span durability" ></span></p>
+          <p class="carousel-item__stat">Inteligencia: <span class="carousel-item__stat-span intelligence" ></span></p>
+          <p class="carousel-item__stat">Poder: <span class="carousel-item__stat-span power" ></span></p>
+          <p class="carousel-item__stat">Velocidad: <span class="carousel-item__stat-span speed" ></span></p>
+          <p class="carousel-item__stat">Fuerza: <span class="carousel-item__stat-span strength" ></span></p>
+        </div>
+      </div>
+    <div class="carousel-item">
+      <h3 class="carousel-item__title">Carta 3/3 de </h3>
+      <img src="" class="d-block carousel-item__img" alt="Imagen card">
+      
+      <h4 class="carousel-item__subtitle">Second slide label</h4>
+      <p class="carousel-item__desc">Some representative placeholder content for the second slide.</p>
+      <div class="carousel-item__stats">
+        <p class="carousel-item__stat">Combate: <span class="carousel-item__stat-span combat"></span></p>
+        <p class="carousel-item__stat">Resistencia: <span class="carousel-item__stat-span durability"></span></p>
+        <p class="carousel-item__stat">Inteligencia: <span class="carousel-item__stat-span intelligence"></span></p>
+        <p class="carousel-item__stat">Poder: <span class="carousel-item__stat-span power"></span></p>
+        <p class="carousel-item__stat">Velocidad: <span class="carousel-item__stat-span speed"></span></p>
+        <p class="carousel-item__stat">Fuerza: <span class="carousel-item__stat-span strength"></span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <h3 class="carousel-item__title">Carta 1/3 de </h3>
+      <img src="" class="d-block carousel-item__img" alt="Imagen card">
+      
+      <h4 class="carousel-item__subtitle">Second slide label</h4>
+      <p class="carousel-item__desc">Some representative placeholder content for the second slide.</p>
+      <div class="carousel-item__stats">
+        <p class="carousel-item__stat">Combate: <span class="carousel-item__stat-span combat"></span></p>
+        <p class="carousel-item__stat">Resistencia: <span class="carousel-item__stat-span durability"></span></p>
+        <p class="carousel-item__stat">Inteligencia: <span class="carousel-item__stat-span intelligence"></span></p>
+        <p class="carousel-item__stat">Poder: <span class="carousel-item__stat-span power"></span></p>
+        <p class="carousel-item__stat">Velocidad: <span class="carousel-item__stat-span speed"></span></p>
+        <p class="carousel-item__stat">Fuerza: <span class="carousel-item__stat-span strength"></span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <h3 class="carousel-item__title">Carta 2/3 de </h3>
+      <img src="" class="d-block carousel-item__img" alt="Imagen card">
+      
+      <h4 class="carousel-item__subtitle">Second slide label</h4>
+      <p class="carousel-item__desc">Some representative placeholder content for the second slide.</p>
+      <div class="carousel-item__stats">
+        <p class="carousel-item__stat">Combate: <span class="carousel-item__stat-span combat"></span></p>
+        <p class="carousel-item__stat">Resistencia: <span class="carousel-item__stat-span durability"></span></p>
+        <p class="carousel-item__stat">Inteligencia: <span class="carousel-item__stat-span intelligence"></span></p>
+        <p class="carousel-item__stat">Poder: <span class="carousel-item__stat-span power"></span></p>
+        <p class="carousel-item__stat">Velocidad: <span class="carousel-item__stat-span speed"></span></p>
+        <p class="carousel-item__stat">Fuerza: <span class="carousel-item__stat-span strength"></span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <h3 class="carousel-item__title">Carta 3/3 de </h3>
+      <img src="" class="d-block carousel-item__img" alt="Imagen card">
+      
+      <h4 class="carousel-item__subtitle">Second slide label</h4>
+      <p class="carousel-item__desc">Some representative placeholder content for the second slide.</p>
+      <div class="carousel-item__stats">
+        <p class="carousel-item__stat">Combate: <span class="carousel-item__stat-span combat"></span></p>
+        <p class="carousel-item__stat">Resistencia: <span class="carousel-item__stat-span durability"></span></p>
+        <p class="carousel-item__stat">Inteligencia: <span class="carousel-item__stat-span intelligence"></span></p>
+        <p class="carousel-item__stat">Poder: <span class="carousel-item__stat-span power"></span></p>
+        <p class="carousel-item__stat">Velocidad: <span class="carousel-item__stat-span speed"></span></p>
+        <p class="carousel-item__stat">Fuerza: <span class="carousel-item__stat-span strength"></span></p>
+      </div>
+    </div>
+    </div>
+    </button>
+  </div>
+</section>
+<section class="compatibilidad">
+    <div class="compatibilidad__head">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn-close cards__btnclose" aria-label="Close"></button>
+    </div>
+    <div class="compatibilidad__body">
+      <h3 class="compatibilidad__title" >Player 1</h3>
+      <div class="compatibilidad__cards">
+        <img class="compatibilidad__img" src="img/oraculo.jfif" alt="img1">
+        <img class="compatibilidad__img" src="img/oraculo.jfif" alt="img1">
+        <img class="compatibilidad__img" src="img/oraculo.jfif" alt="img1">
+      </div>
+    <br>
+      <h3 class="compatibilidad__title">Player 2</h3>
+      <div class="compatibilidad__cards">
+        <img class="compatibilidad__img" src="img/oraculo.jfif" alt="img1">
+        <img class="compatibilidad__img" src="img/oraculo.jfif" alt="img1">
+        <img class="compatibilidad__img" src="img/oraculo.jfif" alt="img1">
+      </div>
+    <br>
+      <h3 class="compatibilidad__title">¿Compatibles?</h3>
+      <h4 class="compatibilidad__text">no</h4>
+    </div>
+<div class="compatibilidad__botones">
+  <button id="btnSalir" type="button" class="btn btn-secondary compatibilidad__btnSalir">Salir</button>
+  <button id="btnGueardar" type="button" class="btn btn-primary ">Guardar</button>
+
+</div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="modalOpciones" tabindex="-1" aria-labelledby="modalOpcionesLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button id="btnModalCerrar" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </di>
+      <div class="modal-body modalOpciones__body">
+        <button id="btnCompatibilidad" type="button" class="btn btn-primary modalOpciones__btn">Ver compatibilidad</button>
+        <button id="btnVolverTirar" type="button" class="btn btn-secondary modalOpciones__btn">Volver a tirar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+</body>
+
+</html>
