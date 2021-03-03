@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
-<!-- Hola SummerHackeres! ❤-->
+<!-- Hola SummerHackeres! ❤ Soy Juli-->
+<!-- Jony, use una API para los datos de las cartas, hay algunas img que no pueden accederse y no supe como validarlo -->
 <head>
     <!-- Metas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="Pagina Shopping List para programa Summerhack EscuelaDevRock">
-    <meta name="keywords" content="shopping, list, lista, compras, summerhack, escueladevrock">
+    <meta name="description" content="Pagina Super Heroes Oracle para programa Summerhack EscuelaDevRock">
+    <meta name="keywords" content="super, heroes, oracle, oraculo, super heroes, summerhack, escueladevrock">
     <meta name="author" content="julietalazzaro">
     <meta name="copyright" content="Julieta Lazzaro 2021">
 
@@ -30,30 +31,30 @@
   <meta name="robots" content="index nofollow" />
   
   <!-- Facebook card -->
-  <meta property="al:web:url" content="https://shopping-list-julieta.web.app" />
-  <meta property="og:url" content="https://shopping-list-julieta.web.app/" />
-  <meta property="og:title" content="Shopping List" />
+  <meta property="al:web:url" content="https://superheroesoracle.web.app/" />
+  <meta property="og:url" content="https://superheroesoracle.web.app/" />
+  <meta property="og:title" content="Super Heroes Oracle" />
   <meta property="og:description"
-    content="Reto semanal 03 | Pagina Shopping List para programa Summerhack EscuelaDevRock" />
-  <meta property="og:image" content="https://shopping-list-julieta.web.app/img/screencart3.png" />
-  <meta property="og:image.alt" content="Shopping List" />
+    content="Reto semanal 03 | SuperHeroesOracle para programa Summerhack EscuelaDevRock" />
+  <meta property="og:image" content="https://superheroesoracle.web.app/img/bola.png" />
+  <meta property="og:image.alt" content="Super Heroes Oracle" />
   <meta property="og:type" content="website" />
   
   <!-- Twitter card -->
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:site" content="@julietalazzaro" />
   <meta property="twitter:creator" content="@julietalazzaro" />
-  <meta property="twitter:title" content="Shopping List" />
+  <meta property="twitter:title" content="Super Heroes Oracle" />
   <meta property="twitter:description"
-    content="Reto semanal 04 | Pagina Shopping List para programa Summerhack EscuelaDevRock" />
-  <meta property="twitter:image" content="https://shopping-list-julieta.web.app/img/screencart3.png" />
-  <meta property="twitter:url" content="https://shopping-list-julieta.web.app/" />
+    content="Reto semanal 04 | SuperHeroesOracle para programa Summerhack EscuelaDevRock" />
+  <meta property="twitter:image" content="https://superheroesoracle.web.app/img/bola.png" />
+  <meta property="twitter:url" content="https://superheroesoracle.web.app" />
   
   <title>SuperHeroesOracle</title>
 </head>
 <body>
   <header class="header">
-    <img class="header__logo" src="img/bola.png" alt="Logo Shopping list">
+    <img class="header__logo" src="img/bola.png" alt="Logo Super Heroes Oracle">
     <h1 class="header__title">SuperHeroes Oracle</h1>
   </header>
 
@@ -87,7 +88,7 @@
 <section class="cards">
   <div class="cards__head">
     <!-- Button trigger modal -->
-    <button type="button" class="btn-close cards__btnclose" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modalOpciones"></button>
+    <button type="button" class="btn-close btn-close-arrow cards__btnclose" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modalOpciones"><i class="fas fa-chevron-down"></i></button>
   </div>
 
   <div id="carouselCards" class="carousel slide" data-bs-ride="carousel" data-bs-ride="true">
@@ -230,8 +231,9 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
+        
         <button id="btnModalCerrar" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </di>
+      </div>
       <div class="modal-body modalOpciones__body">
         <button id="btnCompatibilidad" type="button" class="btn btn-primary modalOpciones__btn">Ver compatibilidad</button>
         <button id="btnVolverTirar" type="button" class="btn btn-secondary modalOpciones__btn">Volver a tirar</button>

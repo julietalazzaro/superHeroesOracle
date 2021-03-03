@@ -224,6 +224,7 @@ function verMatch() {
 }
 
 function cargarCompatibles() {
+  console.log(compatibilidadImg);
   for (let i = 0; i < 6; i++) {
     compatibilidadImg[i].setAttribute("src", juego.cartas[i].img);
   }

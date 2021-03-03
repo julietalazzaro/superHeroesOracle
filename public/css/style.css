@@ -144,6 +144,10 @@ body {
   float: right;
 }
 
+.btn-close-arrow {
+  background: transparent;
+}
+
 #carouselCards {
   min-height: 93vh;
 }
@@ -185,6 +189,9 @@ body {
 }
 
 /* OPCIONES */
+.modal-content {
+  background: #e5e6e8;
+}
 
 .modal-header {
   border: none;
@@ -259,9 +266,6 @@ body {
 }
 @keyframes fadeIn {
   0% {
-    opacity: 0;
-  }
-  30% {
     opacity: 0;
   }
   100% {
