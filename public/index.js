@@ -185,11 +185,12 @@ function guardarCard(res) {
     if (carta.valores[valor] == "null") carta.valores[valor] = "-";
     if (carta.valores[valor] != "-")
       carta.valorgeneral += parseInt(carta.valores[valor]);
-  }
-  if (carta.valorgeneral > 0) {
-    valoresCartas.push(parseInt(carta.valorgeneral));
-  } else {
-    valoresCartas.push(0);
+
+    if (carta.valorgeneral > 0) {
+      valoresCartas.push(parseInt(carta.valorgeneral));
+    } else {
+      valoresCartas.push(0);
+    }
   }
   return carta;
 }
