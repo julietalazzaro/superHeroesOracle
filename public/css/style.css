@@ -34,7 +34,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  max-width: 768px;
+  max-width: 420px;
   margin: 0 auto;
 }
 
@@ -75,12 +75,11 @@ body {
 
 /* HEADER */
 .header {
-  align-items: center;
   background-color: #5f74b0;
   display: flex;
   flex-flow: row nowrap;
   height: 110px;
-  justify-content: cen;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   width: 100%;
@@ -93,8 +92,16 @@ body {
 
 .header__title {
   color: #fff;
+  margin-left: 20px;
+  margin-top: 8px;
+  font-family: "Permanent Marker", cursive;
 }
 
+.list-group-item {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Permanent Marker", cursive;
+}
 /* MAIN */
 .main {
   background: #a799de;
@@ -109,6 +116,7 @@ body {
 #btnSuerte {
   width: 100%;
   height: 45px;
+  font-weight: 700;
 }
 .main__resultados {
   padding-top: 20px;
@@ -139,9 +147,6 @@ body {
 #carouselCards {
   min-height: 93vh;
 }
-/* .carousel-inner {
-  padding: 0 20px;
-} */
 .carousel-indicators {
   margin-bottom: 1rem;
 }
@@ -201,19 +206,20 @@ body {
 /* COMPATIBLIDAD */
 .compatibilidad {
   height: 100vh;
-  padding: 30px;
+  padding: 20px;
   background-color: #6f81b7;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
 
-  /* display: none; */
+  display: none;
 }
 .compatibilidad__head {
   width: 100%;
 }
 .compatibilidad__title {
+  text-align: center;
   font-size: 1.5rem;
   font-family: "Permanent Marker", cursive;
 }
@@ -242,7 +248,9 @@ body {
   font-family: "Permanent Marker", cursive;
   font-size: 5rem;
   color: #d8b966;
-  animation: fadeIn ease 3s;
+  line-height: 41px;
+  margin-bottom: 20px;
+  animation: fadeIn ease 2s;
 }
 .compatibilidad__botones {
   width: 70%;
@@ -262,7 +270,6 @@ body {
 }
 
 /* LOADER */
-
 .loader {
   align-items: center;
   background-color: #5f74b0;

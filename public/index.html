@@ -54,7 +54,7 @@
 <body>
   <header class="header">
     <img class="header__logo" src="img/bola.png" alt="Logo Shopping list">
-    <h1 class="header__title">&nbsp;Oraculo Loco</h1>
+    <h1 class="header__title">SuperHeroes Oracle</h1>
   </header>
 
 <section class="loader">
@@ -67,10 +67,10 @@
   <form action="">
    
     <label for="jugador1" class="form-label">Jugador 1</label>
-    <input type="text" class="form-control" required id="jugador1" aria-describedby="nombre jugador 1" placeholder="Nombre" maxlength="10" value="11">
+    <input type="text" class="form-control" required id="jugador1" aria-describedby="nombre jugador 1" placeholder="Nombre" maxlength="10" >
  
     <label for="jugador2" class="form-label">Jugador 2</label>
-    <input type="text" class="form-control" required id="jugador2" aria-describedby="nombre jugador 2" placeholder="Nombre" maxlength="10" value="22"> 
+    <input type="text" class="form-control" required id="jugador2" aria-describedby="nombre jugador 2" placeholder="Nombre" maxlength="10" > 
     
     <div class="valid-feedback alert alert-danger" role="alert">
       Debe completar los nombres de los dos jugadores
@@ -80,8 +80,6 @@
 <div class="main__resultados">
   <h5 class="main__resultados-title" >Resultados anteriores</h5>
  <ul class="list-group main__resultados-list">
-   <li class="list-group-item">An item</li>
-   <li class="list-group-item">A second item</li>
  </ul>
 
 </div>
@@ -92,7 +90,7 @@
     <button type="button" class="btn-close cards__btnclose" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modalOpciones"></button>
   </div>
 
-  <div id="carouselCards" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselCards" class="carousel slide" data-bs-ride="carousel" data-bs-ride="true">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -106,7 +104,7 @@
       <div class="carousel-item active">
           <h3 class="carousel-item__title">Carta 1/3 de </h3>
           <img src="" class="d-block carousel-item__img" alt="Imagen card">
-          
+
           <h4 class="carousel-item__subtitle">Second slide label</h4>
           <p class="carousel-item__desc">Some representative placeholder content for the second slide.</p>
           <div class="carousel-item__stats">
@@ -200,7 +198,7 @@
 <section class="compatibilidad">
     <div class="compatibilidad__head">
       <!-- Button trigger modal -->
-      <button type="button" class="btn-close cards__btnclose" aria-label="Close"></button>
+      <button id="compatibilidadClose" type="button" class="btn-close cards__btnclose" aria-label="Close"></button>
     </div>
     <div class="compatibilidad__body">
       <h3 class="compatibilidad__title" >Player 1</h3>
@@ -218,11 +216,11 @@
       </div>
     <br>
       <h3 class="compatibilidad__title">¿Compatibles?</h3>
-      <h4 class="compatibilidad__text">no</h4>
+      <h4 class="compatibilidad__text"></h4>
     </div>
 <div class="compatibilidad__botones">
   <button id="btnSalir" type="button" class="btn btn-secondary compatibilidad__btnSalir">Salir</button>
-  <button id="btnGueardar" type="button" class="btn btn-primary ">Guardar</button>
+  <button id="btnGuardar" type="button" class="btn btn-primary ">Guardar</button>
 
 </div>
 </section>
