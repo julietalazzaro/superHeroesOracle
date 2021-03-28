@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <!-- Hola SummerHackeres! ❤ Soy Juli-->
-<!-- Jony, use una API para los datos de las cartas, hay algunas img que no pueden accederse y no supe como validarlo -->
+<!-- Jony, use una API para los datos de las cartas, hay algunas img que no pueden accederse y aun no pude como validar ajaj, perdon por tan poco -->
 <head>
     <!-- Metas -->
     <meta charset="UTF-8">
@@ -66,23 +66,21 @@
 
 <section class="main">
   <form action="">
-   
     <label for="jugador1" class="form-label">Jugador 1</label>
     <input type="text" class="form-control" required id="jugador1" aria-describedby="nombre jugador 1" placeholder="Nombre" maxlength="10" >
- 
     <label for="jugador2" class="form-label">Jugador 2</label>
     <input type="text" class="form-control" required id="jugador2" aria-describedby="nombre jugador 2" placeholder="Nombre" maxlength="10" > 
     
     <div class="valid-feedback alert alert-danger" role="alert">
       Debe completar los nombres de los dos jugadores
     </div>
-    <button id="btnSuerte" type="button" class="btn btn-primary">Voy a tener suerte</button>
+    <button id="btnSuerte" type="button" class="btn btn-primary btnMain">Voy a tener suerte</button>
   </form>
 <div class="main__resultados">
   <h5 class="main__resultados-title" >Resultados anteriores</h5>
- <ul class="list-group main__resultados-list">
- </ul>
-
+  <ul class="list-group main__resultados-list">
+  </ul>
+  <button id="btnBorrarPartidas" type="button" class="btn btn-primary btnMain">Borrar Partidas</button>
 </div>
 </section>
 <section class="cards">

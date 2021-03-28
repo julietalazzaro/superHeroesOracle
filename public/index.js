@@ -50,6 +50,17 @@ function Carta(nombre, img, desc, valores, valorgeneral) {
 let valoresCartas = new Array();
 let juegos = [];
 let partidaGuardada = false;
+let juegosStorage = JSON.parse(localStorage.getItem("juegosStorage"));
+if (juegosStorage !== null) {
+  juegos = juegosStorage;
+}
+if (juegos.length != 0) {
+  document.querySelector(".main__resultados").style.display = "block";
+  for (juego in juegos) {
+    listaResultados.innerHTML += `<li class="list-group-item" data-juego="${juego}">${juegos[juego].jugador1} & ${juegos[juego].jugador2}</li>`;
+  }
+}
+
 juego = new Juego();
 
 // LISTENERS
@@ -114,7 +125,7 @@ btnCerrarCompatibilidad2.addEventListener("click", function () {
 
 btnGuardarCompatibilidad.addEventListener("click", function () {
   juegos.push(juego);
-  juegos.length;
+  localStorage.setItem("juegosStorage", JSON.stringify(juegos));
   listaResultados.innerHTML += `<li class="list-group-item" data-juego="${
     juegos.length - 1
   }">${juego.jugador1} & ${juego.jugador2}</li>`;
@@ -135,6 +146,10 @@ listaResultados.addEventListener("click", function (e) {
   }
 });
 
+document.getElementById("btnBorrarPartidas").addEventListener("click", () => {
+  localStorage.clear();
+  document.querySelector(".main__resultados").style.display = "none";
+});
 //
 //
 // FUNCIONES
